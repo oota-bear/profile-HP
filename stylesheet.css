@@ -1,0 +1,278 @@
+body {
+  margin: 100;
+}
+.tab1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: #fff !important;
+  margin: 0 !important;
+  list-style-type: none;
+  margin: 0;
+}
+
+.tab1__item {
+  flex: 1;
+  flex-basis: 120px;
+}
+
+.tab1__link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #65c6ba;
+  cursor: pointer;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.tab1__link.on {
+  background-color: #b1e2dc;
+}
+
+.tab1-body__item {
+  margin: 30px 15px;
+  display: none;
+  text-align: center;
+}
+
+.tab1-body__item.on {
+  display: block;
+}
+/*HP紹介*/
+.introduce {
+  position: relative;
+  right: 50;
+  padding: 0.5em 1em;
+  margin: 7px 0 10px 30px;
+  color: #00bcd4;
+  background: #e4fcff; /*背景色*/
+  border-top: solid 6px #1dc1d6;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32); /*影*/
+  width: 700;
+}
+
+.introduce p {
+  margin: 0;
+  padding: 0;
+}
+
+/*吹き出し*/
+.balloon1 {
+  position: relative;
+  top: -350px;
+  left: 10;
+  display: inline-block;
+  margin: 1.5em 15px 1.5em 0;
+  padding: 0 5px;
+  width: 200px;
+  height: 150px;
+  line-height: 90px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background: #f6a38b;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.balloon1:before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: -8px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid #f6a38b;
+  z-index: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*吹き出しコメント*/
+.balloon1 p {
+  margin: 0;
+  padding: 0;
+}
+
+/*吹き出し動き*/
+.balloon1 a:hover {
+  position: relative;
+  top: -350px;
+  left: 10px;
+  text-decoration: none;
+}
+
+/*枠デザイン*/
+.profile_box {
+  margin: 2em 0;
+  margin: 7px 0 10px 30px;
+  padding: 7px 5px 7px 40px;
+  background: #dcefff; /*内容の背景色*/
+  width: 900px;
+}
+.profile_box .box-title {
+  font-size: 18px;
+  line-height: 1.8;
+  background: blue; /*タイトルの背景色*/
+  text-align: center;
+  color: #fff; /*文字色*/
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  width: 900px;
+}
+/*内容*/
+.profile_center {
+  text-align: center;
+  margin: 10px 15px 0 0;
+  width: 900px;
+}
+/*自己紹介文*/
+.profile_box p {
+  padding: 15px 20px;
+  margin: 0;
+}
+/*リスト*/
+.profile_box ul {
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+}
+.profile_box ul li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none !important;
+  text-align: left;
+}
+.profile_box ul li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "●"; /*アイコンの種類*/
+  font-weight: 900;
+  position: absolute;
+  left: 1em; /*左端からのアイコンまでの距離*/
+  color: #f6a38b; /*アイコン色*/
+}
+
+.Biography_box {
+  margin: 2em 0;
+
+  background: #dcefff; /*内容の背景色*/
+}
+
+.Biography-box-title {
+  font-size: 18px;
+  line-height: 1.8;
+  background: blue; /*タイトルの背景色*/
+  padding: 4px;
+  text-align: center;
+  color: #fff; /*文字色*/
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/*内容*/
+.Biograph_center {
+  text-align: center;
+  /*margin: 10px 15px 0 0;*/
+  margin: 7px 0 10px 30px;
+}
+table {
+  border-collapse: collapse;
+}
+
+table th {
+  color: #fff;
+  background: #5fb3f5;
+}
+
+table th,
+table td {
+  border: solid 1px #1e90ff;
+}
+table td {
+  background: #dcefff;
+}
+
+.skil_box {
+  margin: 2em 0;
+  background: #dcefff; /*内容の背景色*/
+}
+
+/*経歴書　質問欄*/
+ol.question,
+ol.question ol {
+  counter-reset: list;
+  list-style-type: none;
+  font: 14px/1.6 "arial narrow", sans-serif;
+  padding: 0;
+}
+
+ol.question li {
+  position: relative;
+  padding: 7px 5px 7px 40px;
+  margin: 7px 0 10px 30px;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: dashed 1px #f6a38b;
+}
+ol.question li:before {
+  counter-increment: list;
+  content: counter(list);
+  position: absolute;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background: #f6a38b;
+  border-radius: 50%;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.reason {
+  margin: 7px 0 10px 30px;
+}
+
+/*やってみたいこと仕事編*/
+
+ul.job {
+  padding: 0;
+  font: 14px/1.6 "arial narrow", sans-serif;
+  width: 370px;
+  list-style: none;
+}
+
+/*仕事リスト内のリストデザイン 大枠*/
+ul.job-list {
+  background: #caeb98;
+  box-shadow: 0px 0px 0px 10px #fffde8; /*線の外側*/
+  border: dashed 2px #96d13d; /*破線*/
+  border-radius: 9px;
+  margin-left: 10px; /*はみ出ないように調整*/
+  margin-right: 10px; /*はみ出ないように調整*/
+}
+
+ul.prv-list {
+  background: #caeb98;
+  box-shadow: 0px 0px 0px 10px #fffde8; /*線の外側*/
+  border: dashed 2px #96d13d; /*破線*/
+  border-radius: 9px;
+  margin-left: 10px; /*はみ出ないように調整*/
+  margin-right: 10px; /*はみ出ないように調整*/
+}
+
+input[type="text"] {
+  width: 480px;
+  height: 50px;
+  font-size: 25;
+}
+textarea[type="text"] {
+  width: 480px;
+  font-size: 25;
+}
